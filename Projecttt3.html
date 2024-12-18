@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project challenge</title>
+    <style>
+        body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    background-color: palevioletred;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #070707;
+    color: #EDE8DC;
+}
+
+
+nav {
+    background-color: #0a0a0a;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul{
+    color: #fcfbfb;
+    list-style: none;
+    text-align: center;
+    padding: 6px;
+    background-color: #0a0a0a;
+    padding: 39px;
+    margin-top: 19px;
+}
+nav ul li { 
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fcf8f8;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 40px;
+    transition: background-color black;
+  }
+  
+  nav ul li a:hover {
+    text-decoration:none;
+  }
+
+.about-box {
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    margin-left: 130px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    height: 90%;
+    width: 100%;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.about-box h2 {
+    color: #181C14;
+    border-bottom: 2px solid #0a0a0a;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.about-box p {
+    color: #333;
+    font-size: 18px;
+
+}
+
+.skills-box {
+    background-color: white;
+    padding: 50px;
+    margin-left: 130px;
+    margin-top: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    height: 90%;
+    width: 700%;
+    text-align: justify;
+    font-size: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.skills-h2 h2 {
+    color: #0a0a0a;
+    border-bottom: 2px solid #0d0e0e;
+    display: inline-block;
+    margin-bottom: 90px;
+    font-size: 22px;
+    
+}
+
+.skills-box h4 {
+    color: #fdfcf8;
+    background-color: #0d0e0d;
+    width: 10%;
+    padding: 5px;
+    margin-top: 80px;
+    margin-left: 35px;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.Educ-box {
+    background-color: white;
+    padding: 50px;
+    margin-left: 130px;
+    margin-top: 70px;
+    border-radius: 8px;
+    border-bottom: 2px solid #fffefe;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    height: 90%;
+    width: 100%;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.Educ-box h2 {
+    color: #181C14;
+    border-bottom: 2px solid #080808;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.Educ-box h4 {
+    color: #080808;
+
+}
+
+.Educ-box p {
+    color: #070707;
+    font-size: 18px;
+
+}
+
+.Exp-box {
+    background-color: white;
+    padding: 50px;
+    margin-left: 130px;
+    margin-top: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    height: 90%;
+    width: 100%;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.Exp-box h2 {
+    color: #181C14;
+    border-bottom: 2px solid #080808;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.Exp-box p {
+    color: #0c0c0c;
+    font-size: 18px;
+
+}
+
+
+.projects-box {
+    background-color: white;
+    padding: 50px;
+    margin-left: 130px;
+    margin-top: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    height: 90%;
+    width: 100%;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.projects-box h2 {
+    color: #181C14;
+    border-bottom: 2px solid #070707;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.projects-box p {
+    color: #070707;
+    font-size: 18px;
+
+}
+
+.article-box {
+    background-color: white;
+    padding: 50px;
+    margin-left: 130px;
+    margin-top: 70px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    height: 90%;
+    width: 100%;
+    text-align: justify;
+    font-size: 19px;
+}
+
+.article-box h2 {
+    color: #181C14;
+    border-bottom: 2px solid #070707;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.article-box p a{
+    color: #030303;
+    font-size: 18px;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 9px;
+    margin-top: 60px;
+    background-color: white;
+    color: #0c0c0c;
+              
+}
+
+    </style>
+</head>
+
+
+    <header>
+      
+<nav>
+    <ul>
+   <li><a href="#Section1"> About Me </a></li>
+    <li><a href="#Section2"> Skills </a></li>
+    <li><a href="#Section3"> Education </a></li>
+    <li><a href="#Section4"> Experience </a></li>
+    <li><a href="#Section5"> Projects </a></li>
+   <li><a href="#Section6"> Articles I Wrote </a></li>
+    </ul>
+</nav>
+</header>
+
+
+  <section id="Section1">
+    <div class="about-box">
+        <h2>About Me ☆</h2>
+        <p>
+            I'm a student at a university called Citycot, specifically in the Computer Science faculty.<br>
+            I'm also someone who is passionate about and interested in learning technology, and I hope to achieve<br> great things in this field.
+             Additionally, I have created some small websites, which have sparked even more enthusiasm in me than before.
+              I hope to create many more in the future.
+           </p>
+    </div>
+    </section>
+
+ 
+  <section id="Section2">
+    <div class="skills-box">
+        
+        <div class="skills-h2">
+        <h2>Skills☆</h2>
+        </div>
+           
+       <h4>HTML</h4> <h4>Python</h4> <h4>CSS</h4><h4>HTML</h4>
+       <br>
+       <h4>Bootstrap</h4> <h4>PHP</h4><h4>HTML</h4> <h4>Python</h4> <h4>CSS</h4><h4>HTML</h4>  
+       
+
+       </div>
+    </section>
+
+    <section id="Section3">
+    <div class="Educ-box">
+        <h2>Education☆</h2>
+
+        <h4> CityCot University</h4><br>
+
+        <p>
+          October 2024 -
+          present Studying faculty Computer Science.</p>
+    </div>
+    </section>
+
+   
+    <section id="Section4">
+    <div class="Exp-box">
+        <h2>Experience☆</h2>
+        <p>
+            Second-year Web Developer<br>
+
+            October 2024 – Present<br><br>
+
+   
+        I'm a minor web development student with slills of web development like  Bootstrap, CSS, and  HTML.<br><br>
+        I've created a simple website although i'm not a professional but.<br><br>
+        i hope to make more to become a professional.<br><br>
+        </p>
+    </div>
+    </section>
+
+    
+     <section id="Section5">
+     <div class="projects-box">
+        <h2>Projects☆</h2>
+        <p >personal portfolio</p>
+        <ul>
+            <li>Used HTML and CSS</li>
+            <br>
+            <li>Constructed personal portfolio website to show case my skills </li>
+        </ul>
+    </div>
+    </section>
+
+      
+      <section id="Section6">
+      <div class="article-box">
+        <h2>Articles I Wrote☆</h2>
+        
+        <p><a href="https://github.com/SacdiaaAbdalla6" target="_blank">my github Citycot Innovation Hub</a></p>
+        <p><a href="https://medium.com/@zacduushgang" target="_blank">my medium CityCot Innovation Hub</a></p>
+        
+    </div>
+    </section>
+
+<footer>
+    Bosaso, Somalia <br>
++252-90-7222222 | iamsacdiaa@gmail.com
+</footer>
+</body>
+</html>
